@@ -128,8 +128,7 @@
 .bet-button {
 	width: 256px;
 	height: 51px;
-	border: 1px solid #fff;
-	color: transparent;
+	border: 1px solid currentColor;
 	text-transform: uppercase;
 	background-clip: text;
 	transition: opacity 0.3s;
@@ -275,8 +274,9 @@
 	text-transform: uppercase;
 }
 
-.about__title h4 {
+.about__title h2 {
 	width: 291px;
+	font-size: inherit;
 }
 
 .about__text {
@@ -310,14 +310,12 @@
 	justify-self: start;
 	align-items: start;
 	max-width: 264px;
-	height: 98px;
-	text-underline-offset: 4px;
+	text-underline-offset: 4px; /* Тут тоже удалил фиксированную высоту */
 }
 
 .footer__menu {
 	justify-self: center;
-	width: 163px;
-	height: 64px;
+	width: 163px; /* Тут тоже удалил фиксированную высоту */
 	text-transform: lowercase;
 }
 
@@ -350,8 +348,7 @@
 	flex-flow: row wrap;
 	justify-self: end;
 	gap: 48px;
-	max-width: 240px;
-	height: 48px;
+	max-width: 240px; /* Спасибо, я еще думал над этим и склонялся больше к не правильному решению, но смотрев на макет, увидев высоту, решил все же подогнать так же все 3 блока из-за гонки за пикселями */
 }
 
 .footer__social-list-item {
